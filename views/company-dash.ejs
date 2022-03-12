@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dash</title>
+  <link rel="stylesheet" href="/CSS/company-dash.css">
+  <link rel="stylesheet" href="/CSS/customer-dash.css">
+  <link rel="stylesheet" href="/CSS/sidebar.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <%- include("partials/sidebar.ejs") %>
+    <!-- <div data-aos="fade-right" class="underline"></div> -->
+    <a class="add-btn" href="/raise-query" title="Raise Query"><i class="fa-solid fa-truck-ramp-box"></i>Raise Query</a>
+
+    <div class="comp-dash-main">
+      <h1 data-aos="fade-right">What we have in store for you</h1>
+      <div data-aos="fade-right" id="chartdiv"></div>
+      <div class="comp-userTable">
+        <div class="comp-tblHeader">
+          <% if(chartData) {var plastic=chartData.plastic} %>
+          <% if(chartData) {var metal=chartData.metal} %>
+          <% if(chartData) {var glass=chartData.glass} %>
+          <% if(chartData) {var paper=chartData.paper} %>
+          <h1 data-aos="fade-left" style="text-align: center;">Your previous purchase</h1>
+          <table style="border-radius: 2vh 2vh 0 0; margin-top: 4vh;" class="comp-tbl" cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr data-aos="fade-left">
+                <th>Material Type</th>
+                <th>Weight (kg)</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="comp-tblContent">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <% material.forEach((ele, i)=> { %>
+                <tr>
+                  <td>
+                    <%= ele.materialType %>
+                  </td>
+                  <td>
+                    <%= ele.weight %>
+                  </td>
+                </tr>
+                <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250,
+        duration: 800,
+      });
+    </script>
+    <script>
+      var plastic = "<%= plastic %>";
+      var glass = "<%= glass %>";
+      var metal = "<%= metal %>";
+      var paper = "<%= paper %>";
+      // var metal = chartData.metal
+      // console.log(plastic);
+      console.log(plastic);
+      am5.ready(function () {
+
+        // Create root element
+
+
+        var root = am5.Root.new("chartdiv");
+
+        // Set themes
+        root.setThemes([
+          am5themes_Animated.new(root)
+        ]);
+
+        // Create chart
+        var chart = root.container.children.push(am5percent.PieChart.new(root, {
+          startAngle: 180,
+          endAngle: 360,
+          layout: root.verticalLayout,
+          innerRadius: am5.percent(50)
+        }));
+
+
+        // Create Series
+        var series = chart.series.push(am5percent.PieSeries.new(root, {
+          startAngle: 180,
+          endAngle: 360,
+          valueField: "value",
+          categoryField: "category",
+          alignLabels: false
+        }));
+
+        series.get("colors").set("colors", [
+          am5.color(0x7900FF),
+          am5.color(0x548CFF),
+          am5.color(0x93FFD8),
+          am5.color(0xCFFFDC),
+        ]);
+
+        series.states.create("hidden", {
+          startAngle: 180,
+          endAngle: 180
+        });
+
+        series.slices.template.setAll({
+          cornerRadius: 5
+        });
+
+        series.ticks.template.setAll({
+          forceHidden: true
+        });
+
+        series.labels.template.setAll({
+          text: ""
+        });
+        console.log();
+        series.data.setAll([
+          { value: Number(plastic), category: "Plastic" },
+          { value: Number(metal), category: "Metal" },
+          { value: Number(paper), category: "Paper" },
+          { value: Number(glass), category: "Glass" },
+        ]);
+
+        series.appear(1000, 100);
+
+      }); 
+    </script>
+</body>
+
+</html>
