@@ -31,6 +31,7 @@ Right now, we’re mainly targeting the 4 materials namely Metal, Glass, Paper, 
 Our footer, includes the links to our social media handles, our contact details, our address, and a couple of useful links for the ease of navigation.
 
 ![1](https://user-images.githubusercontent.com/83218056/158043551-4005f849-dbd3-444b-abcf-4428c27f305d.JPG)
+
 ![2](https://user-images.githubusercontent.com/83218056/158043553-4e323926-62e8-47b9-a80f-890c737ed4be.JPG)
 
 
@@ -38,10 +39,22 @@ Our footer, includes the links to our social media handles, our contact details,
 
 In an aim to be transparent, we have listed out all the steps right from where the user raises a request to make a submission to point where the materials that they’ve given, have been approved and the points accredited to their database.
 
+![3](https://user-images.githubusercontent.com/83218056/158043567-af41bb0f-6d1d-40f6-a81a-1e64c097bf76.JPG)
+
+
 **Steps Page**
 
 Here, we’ve listed out the steps that each entity (i.e. the consumers and the businesses) accessing our website should follow to make the most out of JunkAlly.
 After registering yourself on the “Register” page, head over to login to view the role-appropriate dashboard (admin/user).
+
+![4](https://user-images.githubusercontent.com/83218056/158043568-4ee67b43-8fed-4727-b1fc-1d3663521111.JPG)
+
+![5](https://user-images.githubusercontent.com/83218056/158043569-dd2fddf8-7b48-469a-9cb1-11115b496f7e.JPG)
+
+![7](https://user-images.githubusercontent.com/83218056/158043592-4dbd5537-7df0-4ba1-beeb-d05ba98111fc.JPG)
+
+![6](https://user-images.githubusercontent.com/83218056/158043586-e6d55f54-8d21-40e3-a45f-1efe4b69d778.JPG)
+
 
 **User Dashboard**
 
