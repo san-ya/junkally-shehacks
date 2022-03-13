@@ -10,8 +10,11 @@ Our project, JunkAlly, acts as a bridge between small businesses/NGOs (who upcyc
 
 ## Walk-through of JunkAlly
 To walk you through our website, we’ve prepared a detailed step-by-step procedure on how to go about using it.
+
 Head to https://junkally.herokuapp.com/ to witness it in action!
+
 **Landing Page**
+
 At the top of the website, find the navbar which has the options of directing you to –
 1.	Home (i.e., the landing page)
 2.	Process (a detailed chalked out path)
@@ -26,9 +29,11 @@ Right now, we’re mainly targeting the 4 materials namely Metal, Glass, Paper, 
 Our footer, includes the links to our social media handles, our contact details, our address, and a couple of useful links for the ease of navigation.
 
 **Process Page**
+
 In an aim to be transparent, we have listed out all the steps right from where the user raises a request to make a submission to point where the materials that they’ve given, have been approved and the points accredited to their database.
 
 **Steps Page**
+
 Here, we’ve listed out the steps that each entity (i.e. the consumers and the businesses) accessing our website should follow to make the most out of JunkAlly.
 After registering yourself on the “Register” page, head over to login to view the role-appropriate dashboard (admin/user).
 
