@@ -30,6 +30,10 @@ Right now, we’re mainly targeting the 4 materials namely Metal, Glass, Paper, 
 
 Our footer, includes the links to our social media handles, our contact details, our address, and a couple of useful links for the ease of navigation.
 
+![1](https://user-images.githubusercontent.com/83218056/158043551-4005f849-dbd3-444b-abcf-4428c27f305d.JPG)
+![2](https://user-images.githubusercontent.com/83218056/158043553-4e323926-62e8-47b9-a80f-890c737ed4be.JPG)
+
+
 **Process Page**
 
 In an aim to be transparent, we have listed out all the steps right from where the user raises a request to make a submission to point where the materials that they’ve given, have been approved and the points accredited to their database.
