@@ -19,8 +19,11 @@ At the top of the website, find the navbar which has the options of directing yo
 1.	Home (i.e., the landing page)
 2.	Process (a detailed chalked out path)
 3.	Steps
+
     a.	Steps to follow as a user
+    
     b.	Steps to follow as a small business
+    
 4.	Login (as a small business or as a consumer)
 5.	Register (to join us on the path of sustainability!)
 As you scroll down the landing page, we’ve incorporated our motivation behind JunkAlly i.e. Why Recycle
