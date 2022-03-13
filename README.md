@@ -60,6 +60,8 @@ After registering yourself on the “Register” page, head over to login to vie
 
 The user dashboard is designed to help users(consumers) sell recyclable materials like glass bottle, plastic bottles, metal and paper. They can fill in the required information about the material and easily get rid of these wastes in an eco-friendly manner. In exchange, the users also receive reward points!
 
+![8](https://user-images.githubusercontent.com/83218056/158043795-0ea55a81-32b9-4648-a97c-04f7e9774230.JPG)
+
 **Company Dashboard**
 
 The company dashboard helps small businesses connect with us. They can buy the required material from our junk inventory at much cheaper rates.
