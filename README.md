@@ -1,4 +1,5 @@
 # JunkAlly
+<i>Head to https://junkally.herokuapp.com/ to witness it in action!</i>
 
 ## Inspiration
 Believe it or not, we drew our inspiration from waste! After having realised our huge role in plundering our environment we decided to not only try to give it up but also help others alleviate this by doing their role. We were inspired from this need to not let our consumerist natures completely destroy our beautiful environment.
@@ -10,8 +11,6 @@ Our project, JunkAlly, acts as a bridge between small businesses/NGOs (who upcyc
 
 ## Walk-through of JunkAlly
 To walk you through our website, we’ve prepared a detailed step-by-step procedure on how to go about using it.
-
-Head to https://junkally.herokuapp.com/ to witness it in action!
 
 **Landing Page**
 
